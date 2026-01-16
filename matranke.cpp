@@ -13,7 +13,7 @@ void bfs(int s){
 		int x = p.front();
 		p.pop();
 		cout << city[x] << " ";
-		for (int y = 1; y <= n; y++) {
+		for (int y = n; y >=1; y--) {
 			if (a[x][y] == 1 && !visit[y]) {
 				visit[y] = 1;
 				p.push(y);
